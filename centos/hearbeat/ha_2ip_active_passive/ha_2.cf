@@ -1,0 +1,21 @@
+logfile /var/log/ha-log
+
+logfacility     local0
+
+keepalive 2
+
+deadtime 30
+
+initdead 120
+
+udpport 694
+
+bcast   eth0
+
+ucast eth0 192.168.1.165 #
+
+auto_failback on
+
+node    node1
+node    node2
+
